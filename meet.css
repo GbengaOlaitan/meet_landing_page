@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+.outer-wrapper{
+  overflow: hidden;
+}
+.logo{
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.hero-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-text{
+  text-align: center;
+  font-family: "Red Hat Display";
+}
+
+.banner-text h1{
+  font-size: 40px;
+  font-weight: 900;
+  width: 375px;
+  margin: 50px auto 24px;
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+.banner-text p{
+  width: 327px;
+  margin: 0 auto 32px;
+  color: #87879D;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.desktop-hero-banner{
+  display: none;
+}
+
+button{
+  border-radius: 29px;
+  border: none;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+.download{
+  padding:1rem 2.8rem 1rem 2.5rem;;
+  background-color: #4D96A9;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.download span {
+  color: #8FE3F9;
+ font-weight: 900;
+ margin-left: 4px;
+}
+
+.what{
+  background-color:#855FB1;
+  padding: 1rem 2rem;
+  font-weight: 900;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.progress{
+  text-align: center;
+  margin-top: 64px;
+}
+
+.track_number{
+padding: 20px;
+ border: 2px solid red;
+ display: inline-block;
+ border-radius: 50%;
+border: 1px solid rgba(135, 135, 157, 0.25);
+background: #FAFAFA;
+text-align: center;
+color: black;
+font-weight: 900;
+}
+
+svg{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+}
+
+/* ---------------SECTION 2-------------
+----------------- */
+
+.dis__images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px ;
+  padding: 0 2rem;
+  margin-top: 5rem;
+}
+.images img{
+  width: 100%;
+  border-radius: 15px;
+}
+.images{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.text_div h3{
+  color: #4D96A9;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 50px 24px 24px  24px;
+}
+
+.text_div h1{
+  width: 327px;
+  color: #28283D;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0 auto 32px;
+}
+
+.text_div p{
+  width: 327px;
+  margin: 0 auto;
+  color: #87879D;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+
+footer{
+  background-image: url(./meet-landing-page/starter-code/assets/mobile/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+}
+
+/* ------DESKTOP---------------------- */
+@media screen and (min-width:1024px) {
+
+  .desktop-hero-banner{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-hero-banner{
+    display: none;
+  }
+
+  .banner-btn{
+    display: flex;
+  }
+
+  .download{
+    padding:1rem 4.8rem 1rem 2.5rem ;
+    background-color: #4D96A9;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  .download span {
+    color: #8FE3F9;
+   font-weight: 900;
+   margin-left: 4px;
+  }
+  
+  .what{
+    background-color:#855FB1;
+    padding:1rem 2rem;
+    font-weight: 900;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+  }
+
+  .dis__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 2rem;
+  }
+
+  .images{
+    width: 227px;
+  }
+
+  .img_1{
+    order: 3;
+    margin-right: -30px;
+  }
+  .img_2{
+    margin-left: -30px;
+  }
+  .dis__images {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 7rem;
+  }
+  footer{
+    background-image: url(./meet-landing-page/starter-code/assets/desktop/image-footer.jpg);
+    height: 15rem;
+  }
+
+  .footer_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 5rem;
+    flex-shrink: 1;
+  }
+
+  .footer_container div h1{
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer_text{
+    line-height: 500px;
+  }
+
+}
+
+
+/* ----------TABLET--------------------- */
+
+@media screen and (min-width:450px) and (max-width:1023px) {  
+
+  .outer-wrapper{
+    overflow: hidden;
+  }
+
+  .desktop-hero-banner{
+    display: none;
+  }
+  .mobile-banner-btn{
+    display: flex;
+    text-align: center;
+  }
+
+  .download span {
+    color: #8FE3F9;
+    font-weight: 900;
+    margin-left: 4px;
+  }
+  
+  .download{
+    padding:1rem 4.8rem 1rem 2.5rem ;
+    background-color: #4D96A9;
+    font-weight: 900;
+    margin: 0;
+    display: inline;
+  }
+  
+  .download span {
+    color: #8FE3F9;
+    font-weight: 900;
+    margin-left: 4px;
+  }
+  
+  .what{
+    background-color:#855FB1;
+    padding:1rem 2rem;
+    font-weight: 900;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    display: inline;
+  }
+
+    footer{
+    background-image: url(./meet-landing-page/starter-code/assets/tablet/image-footer.jpg);
+    height: 15rem;
+    
+  }
+
+  .footer_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 5rem;
+
+  }
+
+  .footer_container div h1{
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer_text{
+    line-height: 500px;
+  }
+
+
+
+}
+
+
+
+.footer_container{
+  /* background-color: rgb(0, 183, 255); */
+  margin-top: -32px;
+  height: 100%;
+  /* opacity: 0.6; */
+  padding: 2rem 0;
+}
+
+.footer_container h1{
+  font-weight: 900;
+  color: #FAFAFA;
+  font-family: "Red Hat Display";
+  font-size: 32px;
+  line-height: 36px;
+  width: 327px;
+  margin: 0 auto;
+  padding: 65px 0 24px;
+  }
+
+  .footer_text {
+    width: 327px;
+    color: #FAFAFA;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0 auto 32px;
+    overflow: hidden;
+  }
+
+  .footer_btn {
+    background-color: #855FB1;
+    flex-shrink: 2;
+  }
+
+  .footer_btn span{
+    color: #D9B8FF;
+  }
